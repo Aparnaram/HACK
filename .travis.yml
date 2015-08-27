@@ -1,0 +1,11 @@
+language: csharp
+solution: WindowsFormsApplication1.sln
+sudo: required
+mono: 
+  - latest 
+script:
+  - xbuild /p:Configuration=Debug WindowsFormsApplication1.sln
+before_install:
+  - sudo apt-get install nunit-console
+after_script:
+  - nunit-console UnitTest.Test/bin/Debug/UnitTest.Test.dll
