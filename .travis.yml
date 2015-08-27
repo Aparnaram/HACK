@@ -6,7 +6,7 @@ mono:
 script:
   - xbuild /p:Configuration=Debug WindowsFormsApplication1.sln
 install:
-  - nuget restore WindowsFormsApplication1.sln
+  - nuget restore ./WindowsFormsApplication1.sln
 before_install:
   - sudo apt-get install nunit-console
 after_script:
