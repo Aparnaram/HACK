@@ -1,5 +1,5 @@
 language: csharp
-solution: WindowsFormsApplication1.sln
+solution: ./WindowsFormsApplication1.sln
 sudo: required
 mono: 
   - latest 
